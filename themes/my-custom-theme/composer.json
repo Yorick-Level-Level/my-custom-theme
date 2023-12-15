@@ -1,0 +1,29 @@
+{
+    "name": "yorick/my-custom-theme",
+    "description": "A custom WordPress theme developed from scratch",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Yorick Van de Venne",
+        "email": "yorick.vd.venne@hotmail.nl"
+      }
+    ],
+    "repositories": [
+        {
+          "type": "composer",
+          "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "timber/timber": "^2.0"
+    },
+    "require-dev": {
+        
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
