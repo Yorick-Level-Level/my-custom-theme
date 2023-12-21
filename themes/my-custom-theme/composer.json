@@ -9,14 +9,16 @@
         "email": "yorick.vd.venne@hotmail.nl"
       }
     ],
-    "repositories": [
-        {
+    "repositories": {
+      "packagist.org": false,
+      "private-packagist": {
           "type": "composer",
-          "url": "https://wpackagist.org"
-        }
-    ],
+          "url": "https://repo.packagist.com/level-level/"
+      }
+    },
     "require": {
-        "timber/timber": "^2.0"
+        "timber/timber": "^2.0",
+        "ll-premium/advanced-custom-fields-pro": "^6.2"
     },
     "require-dev": {
         
@@ -25,5 +27,11 @@
         "allow-plugins": {
             "composer/installers": true
         }
-    }
+    },
+    "autoload": {
+      "psr-4": {
+          "Timber\\": "app/Timber",
+          "Custom\\": "app/Custom"
+      }
+  }
 }

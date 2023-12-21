@@ -1,5 +1,5 @@
 <?php 
-namespace Custom;
+namespace Custom\Theme;
 
 class PostTypes {
     public function register_hooks() {

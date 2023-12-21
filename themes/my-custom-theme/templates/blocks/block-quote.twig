@@ -1,0 +1,26 @@
+{#
+/**
+ * Block Name: Quote Block
+ *
+ * This is the template that displays the quote block.
+ */
+#}
+
+{% if is_preview %}
+    <p>I will only appear in the editor.</p>
+{% endif %}
+
+<div id="example-{{ block.id }}" class="wrapper">
+    <h1>{{ fields.quote_text }}</h1>
+    <p>{{ fields.name_of_author }}</p>
+    {% set timber_post = block_class.get_timber_post() %}
+    {% if timber_post %}
+        <p>{{ timber_post.post_content }}</p>
+    {% endif %}
+</div>
+<style type="text/css">
+    #testimonial-{{ block.id }} {
+        background: {{ fields.background_color }};
+        color: {{ fields.text_color }}; 
+    }
+</style>

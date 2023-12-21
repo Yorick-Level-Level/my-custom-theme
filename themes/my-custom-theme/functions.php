@@ -14,4 +14,5 @@ Timber::init();
 // Sets the directories (inside your theme) to find .twig files.
 Timber::$dirname = [ 'templates' ];
 
-( new \Custom\PostTypes() )->register_hooks();
+( new \Custom\Theme\ACFBlocks() )->register_hooks();
+( new \Custom\Theme\PostTypes() )->register_hooks();
