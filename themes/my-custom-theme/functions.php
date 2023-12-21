@@ -16,3 +16,4 @@ Timber::$dirname = [ 'templates' ];
 
 ( new \Custom\Theme\ACFBlocks() )->register_hooks();
 ( new \Custom\Theme\PostTypes() )->register_hooks();
+( new \Custom\Theme\Taxonomies() )->register_hooks();
